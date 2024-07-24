@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Motivational Msg Walla</title>
+    <style>
+       * {font-size: 50px; font-family: cambria;}
+       body {background-color: azure;}
+    </style>
+</head>
+<body>
+    <center>
+        <h1>New Motivational Msg Walla</h1>
+        
+            
+        
+        <h2 id="msg"></h2>
+        <script>
+            function showMsg() {
+                let msg = document.getElementById("msg");
+                let quotes = ["Trust the process", "Believe in you", "You can do it!", "All the best", "Wow I like it", "God is Great!"];
+                let r = Math.floor(Math.random() * quotes.length);
+                let ans = quotes[r];
+                msg.innerHTML = ans;
+            }
+
+            showMsg();
+            setInterval(showMsg, 5000);
+        </script>
+    </center>
+</body>
+</html>
